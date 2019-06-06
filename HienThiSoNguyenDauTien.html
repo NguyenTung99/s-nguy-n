@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hiển thị số nguyên đầu tiên</title>
+</head>
+<body>
+<script>
+    let SoSoNguyenTo = 20;
+    let SoKiemTra = 3;
+    let x = 0;
+    let n;
+    while (x < SoSoNguyenTo) {
+        let la_So_Nguyen_To = true;
+        for (n = 2; n < SoKiemTra; n++) {
+            if (SoKiemTra % n === 0) {
+                la_So_Nguyen_To = false;
+                break;
+            }
+        }
+        if (la_So_Nguyen_To) {
+            document.write(SoKiemTra + "<br>");
+            SoKiemTra++;
+            x++;
+        }
+        else {SoKiemTra ++}
+    }
+</script>
+</body>
+</html>
